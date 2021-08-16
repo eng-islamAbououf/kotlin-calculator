@@ -4,7 +4,7 @@ fun main() {
     try {
         // read first number
         print("Please Enter first number : ")
-        var num1 : Double = readLine()!!.toDouble()
+        var num1 : Double = readLine()!!.toDouble() 
         //read the second number
         print("Please Enter second number : ")
         var num2 : Double= readLine()!!.toDouble()
@@ -14,6 +14,7 @@ fun main() {
         // calculate result
         calculate(num1,num2,op)
     }catch (e: NumberFormatException){
+        //todo instead of using try/catch search of how to check input is invalid number using if else conditions 
         println(e)
     }
 //    calculate(3.0,5.0,'+')
